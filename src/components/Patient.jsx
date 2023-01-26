@@ -4,7 +4,9 @@ const Patient = ({ patient, setPatient, handleDeletePatient }) => {
       <p className="font-bold mb-3 text-gray-700 uppercase">
         {' '}
         Nombre:{' '}
-        <span className="font-normal normal-case">{patient.petName}</span>
+        <span className="font-normal normal-case">
+          {patient.petName} {patient.id}
+        </span>
       </p>
       <p className="font-bold mb-3 text-gray-700 uppercase">
         {' '}

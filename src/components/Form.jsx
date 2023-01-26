@@ -46,11 +46,10 @@ const Form = ({ setPatients, patients, patient, setPatient }) => {
       symptoms,
     };
 
-    //falta update, esta malo
     if (patient.id) {
       newPatient.id = patient.id;
       const updatedPatients = patients.map((value) => {
-        value.id == patient.id ? newPatient : value;
+        return value.id == patient.id ? newPatient : value;
       });
       setPatients(updatedPatients);
       setPatient({});
